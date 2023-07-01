@@ -51,6 +51,6 @@ After clicking the green 'Generate Password' button, you will be prompted to ent
 
 
 ## Credits
-Background image [Image by rawpixel.com on Freepik]("https://www.freepik.com/free-vector/green-futuristic-waves-background-with-computer-code-technology_16406692.htm#query=security%20wallpaper&position=17&from_view=search&track=ais")
+Background image [Image by rawpixel.com on Freepik](https://www.freepik.com/free-vector/green-futuristic-waves-background-with-computer-code-technology_16406692.htm#query=security%20wallpaper&position=17&from_view=search&track=ais)
 
 
