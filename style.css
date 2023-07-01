@@ -146,6 +146,19 @@ button[disabled] {
   user-select: all;
 }
 
+footer {
+  text-align: center;
+  margin-top: -3rem;
+  color: #ffffff;
+  background: #004529;
+  padding-bottom: 20px;
+  padding-top: 2px;
+}
+
+footer a {
+  color: #fff;
+}
+
 
 
 @media (max-width: 690px) {
