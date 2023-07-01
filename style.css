@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: #FF9800;
+  color: #090909;
+  text-shadow: none;
+}
+
 html,
 body,
 .wrapper {
@@ -14,7 +20,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #005939;
   background-image: url(./images/rm378-02c.jpg);
   background-size: cover;
 }
@@ -129,12 +135,18 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #00fe2b;
+  border: 2px dashed #00fe37;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
   background: #00130b;
+  color: #00fe37;
+  text-shadow: 0 0 15px #001b0c, 0 0 10px #4CAF50, 0 0 20px #00ad70, 0 0 30px #00ad70, 0 0 40px #4CAF50;
+  font-family: 'Martian Mono', monospace;
+  user-select: all;
 }
+
+
 
 @media (max-width: 690px) {
   .btn {

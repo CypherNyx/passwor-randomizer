@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = writePassword();
+  var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -13,32 +13,29 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// Set arrays with all possible characters.
 var upperCaseChartrs = ["A","B","C","D","E","F","G","H","I","J","K","L","M",'N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 var lowerCaseChartrs = ["a","b","c","d","e","f","g","h","i","j","k","l","m",'n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var numericChartrs = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var specialChartrs = ["!","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[","]","^","_","`","{","|","}","~"];
 
-function writePassword(){
-  // promt: How many characters
+function generatePassword(){
+  // promt: How many characters?
   // Store info in var for answer
   
-  // Prompt: What type of characters
+  // Prompt: What type of characters?
   // Options: Special number, upper, lower
-  // window.confirm
+  // use confirm prompts to record user's input
 
-  //* Use answers to make password
-  // create vars that include all possible characters
-  // separate vars for each type, by making arrays
-  // var uppercaseLetters 
-  // var specialCharacters 
-
+   // set var(s): wantsLowerCase, wantsUpperCase, wantsNumChartr, wantsSpecialChartr 
+  
   // take all "TRUE" arrays and concat into new array
-  //* Choose random chars from array based on user input
+  // Choose random chars from combined array based on user input
   //* Var push into new array
 
   //* Var password = Turn array into string.toString()
   //* Return password
-  // const aNumber = Number(window.prompt("How many characters do you want in your password? Choose between 8-128 characters.", ""));
+  
 
   //How Many Characters + Validate amount of characters?
   const numOfChartrs = prompt("How many characters do you want in your password? \n Choose between 8-128 characters.");
@@ -97,23 +94,21 @@ function writePassword(){
 
   // ! Generate Password?
   //Create an iteration loop that picks a random char from passwordArray for as many times as numOfChartrs chosen by user
-  var safePassword = "";
+  var password = "";
   for (var key=0; key < numOfChartrs; key++){
     // * Randomly select a character from the passwordArray and add it to the password string
     var randomCharacter = Math.floor(Math.random() * passwordArray.length);
     //* Math floor = gives me a full integer, math random chooses a char from contactinated array BUT
     // ! why use passwordArray.length?
-    safePassword += passwordArray[randomCharacter];
+    password += passwordArray[randomCharacter];
+
+
   }
 
+        //* Return new safe password
+        return password;
+  
 
-  //* Return new safe password
-  return safePassword;
 
 }
-
-// SHOW password to the #password input
-function showPassword() {
-   var passwordText = document.querySelector("#password");
-  passwordText.value = safePassword;
-}
+console.log(password);
