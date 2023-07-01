@@ -5,9 +5,9 @@ Randomly generated passwords can provide greater security for sensitive data. Th
 
 Powered by a combination of dynamic HTML, CSS, and JavaScript code to create an interactive experience.The functionality of this password generator also provides a responsive layout that adapts to various screen sizes, offering a convenient solution for creating strong and reliable passwords.
 
-![JavaScript][js-url]
-![HTML][html-url]
-![CSS][css-url]
+![JavaScript](./images/js.svg)
+![HTML](./images/html.svg)
+![CSS](./images/css.svg)
 
 ## Deployed Application
 You can view the live application
