@@ -38,14 +38,15 @@ function generatePassword(){
   
 
   //How Many Characters + Validate amount of characters?
-  const numOfChartrs = prompt("How many characters do you want in your password? \n Choose between 8-128 characters.");
+  const numOfChartrs = parseInt(prompt("How many characters do you want in your password? \n Choose between 8-128 characters."));
+    // How can I prevent user from entering letter instead of Number? = Used parseInt in prompt on line 41
+
   console.log("number of characters", numOfChartrs);
   if (Number.isNaN(numOfChartrs)){
     alert("Choose a valid NUMBER! \n Please try again.");
     numOfChartrs = prompt("Please enter a valid Number.");
-  } 
-    // ! How can I prevent user from entering letter instead of Number?
-    else if (numOfChartrs < 8 || numOfChartrs > 128) {
+  }
+   if (numOfChartrs < 8 || numOfChartrs > 128) {
     alert("Choose a valid number of characters..\n Please try again.");
     numOfChartrs = prompt("Choose a password length of at LEAST 8 characters \n and NO MORE than 128 characters.");
   }  else {
